@@ -2,7 +2,6 @@ Rails.application.routes.draw do
   root "pages#home"
   get "ladies" => "pages#ladies"
   get "luxury" => "pages#luxury"
-  get "parties" => "pages#parties"
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

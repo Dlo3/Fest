@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -5,13 +6,64 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-	<%= link_to "Fest", root_path %>
-	<%= link_to "Ladies", ladies_path %>
-	<%= link_to "luxury", luxury_path %>
-	<%= link_to "Parties", parties_path %>
-	<%= yield %>
-
+	<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">
+        <img alt="Brand" src="...">
+      </a>
+    </div>
+  </div>
+</nav>
+<div class="page-header">
+  <h1>Fest <small>WHAT HAPPENS AT THE FEST STAYS AT THE FEST</large></h1>
+</div>
+		<%= link_to "Fest", root_path %>
+		<%= link_to "Ladies", ladies_path %>
+		<%= link_to "luxury", luxury_path %>
+		<div class="container">
+			<%= yield %>
+		</div>
+		<div class="media">
+  <div class="media-left">
+    <a href="#">
+      <img class="media-object" src="..." alt="...">
+    </a>
+  </div>
+  <div class="media-body">
+    <h4 class="media-heading">Content To Be</h4>
+    This will be where users uplaod photos
+  </div>
+</div>
 </body>
+
+<!-- Carousel
+
+=========================-->
+
+<div id="myCarousel" class="carousel slide"
+
+	<ol class="carousel-indicators">
+		<li data-target="myCarousel" data-slide-to="0" class="active"></li>
+		<li data-target="myCarousel" data-slide-to="1"></li>
+		<li data-target="myCarousel" data-slide-to="2"></li>
+	</ol>
+	<div class="carousel-inner">
+			<div class="item active">
+					<img src="images/Katherine.jpg"
+					<div class="container">
+							<div class="carousel-caption">
+									<h1>My Heading Text</h1>
+									<p>This tag will contain the text</p>
+							</div>
+					</div>
+			</div>
+	</div>
+</div>	
+	
+
+</div>
 </html>
